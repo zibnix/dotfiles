@@ -1,0 +1,52 @@
+[user]
+    name = Court Fowler
+    email = courtf@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+ 
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+ 
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+ 
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[alias]
+    tree = log --graph --pretty=oneline
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\t \\2/' | sort
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+    in = !git fetch && git log master..FETCH_HEAD
+    # lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset%s %C(blue)%an%Creset %Cgreen(%cr)' --abbrev-commit --date=relative
+    out = !git fetch && git log FETCH_HEAD..master
+    pr = pull -r
+    revert = checkout
+    rollback = reset --soft HEAD~1
+    st = status
+    pull = pull && git submodule update
+    this = !git init && git add . && git commit -m \"initial commit\"
+[push]
+    default = upstream
+[core]
+	excludesfile = ~/.gitignore
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[pull]
+	ff = only
