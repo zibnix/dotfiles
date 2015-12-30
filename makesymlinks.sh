@@ -59,7 +59,7 @@ if "$go" ; then
 
     tarfile='go1.4.3.linux-amd64.tar.gz'
     curl https://storage.googleapis.com/golang/"$tarfile" > "$tarfile" &&
-    tar -C ~/go1.4temp -xzf go1.4.3.linux-amd64.tar.gz &&
+    tar -C ~/go1.4temp -xzf "$tarfile" &&
     mv ~/go1.4temp/go ~/go1.4 && rm -rf ~/go1.4temp && rm "$tarfile"
 
     # clone Go repo
