@@ -82,25 +82,10 @@ plugins=(git)
 
 # User configuration
 
-function curltime () {
-    curl -o /dev/null -D - -w 'appconn: %{time_appconnect}\nconnect: %{time_connect}\ndnslook: %{time_namelookup}\npretran: %{time_pretransfer}\nredirec: %{time_redirect}\nstarttr: %{time_starttransfer}\n  TOTAL: %{time_total}\n' $1
-}
-
-function b642hex () {
-    echo $1 | base64 --decode | xxd -c 256 -p
-}
-
-function xfcpy () {
-    cat $1 | xclip -selection clipboard
-}
-
-function xfpst () {
-    xclip -selection clipboard -o > $1
-}
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/sbin:/usr/sbin
 source $ZSH/oh-my-zsh.sh
+source $HOME/dotfiles/funcs.sh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
