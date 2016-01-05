@@ -37,8 +37,8 @@ export PATH=$PATH:$HOME/go/bin
 
 export PATH=$PATH:/sbin:/usr/sbin
 
-# android + java
-export JAVA_HOME=/opt/jdk/jdk1.8.0_45
+# android
 export PATH=$PATH:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools
+alias astudio=~/android-studio/bin/studio.sh
 
 source $HOME/dotfiles/funcs.sh

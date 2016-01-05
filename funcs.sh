@@ -18,11 +18,11 @@ xfpst () {
 
 # a function for setting up Go, pass a git tagname to specify Go's version
 install_go() {
-    default='go1.5.2'
+    deftag='go1.5.2'
 
-    ver="$1"
-    if [ -z "$ver" ]; then
-        ver="$default"
+    gotag="$1"
+    if [ -z "$gotag" ]; then
+        gotag="$deftag"
     fi
 
     # go1.4 is required to compile the compilers/assemblers/linkers for >=go1.5
@@ -36,11 +36,24 @@ install_go() {
     # clone Go repo
     git clone https://go.googlesource.com/go ~/go &&
     # checkout latest release
-    cd ~/go && git checkout "$ver" &&
+    cd ~/go && git checkout "$gotag" &&
     # install
     cd ~/go/src && ./all.bash 
     # gopath dir
     mkdir ~/gocode
+}
+
+install_android() {
+    defurl='https://dl.google.com/dl/android/studio/ide-zips/1.5.1.0/android-studio-ide-141.2456560-linux.zip'
+    zipfile='android_studio.zip'
+
+    asurl="$1"
+    if [ -z "$asurl" ]; then
+        asurl="$defurl"
+    fi
+
+    curl "$asurl" > "$zipfile" &&
+    unzip "$zipfile" -d ~
 }
 
 # a function for compiling & installing YouCompleteMe
@@ -51,13 +64,13 @@ install_ycm() {
 
 # a function for setting up a /mnt/tmpfs, pass a size: $ make_tmpfs 2G
 make_tmpfs() {
-    default='2G'
+    defsize='2G'
 
-    sz="$1"
-    if [ -z "$sz" ]; then
-        sz="$default"
+    fssize="$1"
+    if [ -z "$fssize" ]; then
+        sz="$defsize"
     fi
 
     sudo mkdir /mnt/tmpfs
-    sudo mount -o size="$sz" -t tmpfs tmpfs /mnt/tmpfs
+    sudo mount -o size="$fssize" -t tmpfs tmpfs /mnt/tmpfs
 }

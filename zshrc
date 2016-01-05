@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/dotfiles/oh-my-zsh
+DISABLE_AUTO_UPDATE=true
 
 # no autocorrect
 unsetopt correct_all
@@ -30,9 +31,9 @@ export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/go/bin
 
-# android + java
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# android
 export PATH=$PATH:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools
+alias astudio=~/android-studio/bin/studio.sh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
