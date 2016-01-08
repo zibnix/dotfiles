@@ -23,6 +23,7 @@ members
 mercurial
 nload
 nmap
+ntp
 openjdk-8-jdk
 python-dev
 python3-dev
