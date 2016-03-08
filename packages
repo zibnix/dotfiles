@@ -1,4 +1,5 @@
 arandr
+awscli
 build-essential
 cmake
 curl

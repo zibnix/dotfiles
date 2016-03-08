@@ -18,7 +18,7 @@ xfpst () {
 
 # a function for setting up Go, pass a git tagname to specify Go's version
 install_go() {
-    deftag='go1.5.2'
+    deftag='go1.6'
 
     gotag="$1"
     if [ -z "$gotag" ]; then
@@ -31,6 +31,7 @@ install_go() {
     tarfile='go1.4.3.linux-amd64.tar.gz'
     curl https://storage.googleapis.com/golang/"$tarfile" > "$tarfile" &&
     tar -C ~/go1.4temp -xzf "$tarfile" &&
+    rm -rf ~/go1.4 &&
     mv ~/go1.4temp/go ~/go1.4 && rm -rf ~/go1.4temp && rm "$tarfile"
 
     # clone Go repo
