@@ -60,6 +60,7 @@ install_android() {
 # a function for compiling & installing YouCompleteMe
 install_ycm() {
     cd ~/.vim/bundle/YouCompleteMe &&
+    git submodule update --init --recursive &&
     PATH=$PATH:$HOME/go/bin ./install.py --clang-completer --gocode-completer
 }
 
