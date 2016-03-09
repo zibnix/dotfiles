@@ -47,6 +47,12 @@ au Filetype go nnoremap <C-J> :exe "GoDef"<CR>
 au Filetype go nnoremap <C-K> <C-O>
 au Filetype go set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 let g:go_fmt_command = "goimports"
+" let g:go_highlight_functions = 1
+" let g:go_highlight_methods = 1
+" let g:go_highlight_structs = 1
+" let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 set completeopt+=longest,menuone
 " If you prefer the Omni-Completion tip window to close when a selection is
 " " made, these lines close it on movement in insert mode or when leaving
