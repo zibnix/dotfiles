@@ -6,6 +6,7 @@ curl
 dselect
 gdebi
 gdal-bin
+gimp
 git
 graphviz
 hping3
@@ -22,6 +23,7 @@ libglm-dev
 lshw
 members
 mercurial
+mtr
 nload
 nmap
 ntp
