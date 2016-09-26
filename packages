@@ -1,4 +1,5 @@
 arandr
+at
 awscli
 build-essential
 cmake
@@ -20,6 +21,7 @@ libgl1-mesa-dev
 libglew-dev
 libglfw3-dev
 libglm-dev
+lm-sensors
 lshw
 members
 mercurial
