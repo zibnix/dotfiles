@@ -44,6 +44,7 @@ cp --parents ./.xchat2/colors.conf ~
 
 if "$apt" ; then
     # apt-get install a bunch of stuff, lib32stdc++6 required by android studio
+    sudo cp sources.list /etc/apt/sources.list &&
     sudo apt-get update &&
     cat packages | sudo xargs apt-get -y install &&
     dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal.dconf
