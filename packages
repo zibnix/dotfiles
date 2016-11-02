@@ -4,6 +4,7 @@ awscli
 build-essential
 cmake
 curl
+dconf-tools
 dselect
 gdebi
 gdal-bin
