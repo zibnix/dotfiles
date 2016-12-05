@@ -24,6 +24,7 @@ libglfw3-dev
 libglm-dev
 lm-sensors
 lshw
+mcrypt
 members
 mercurial
 mtr
@@ -31,15 +32,16 @@ nload
 nmap
 ntp
 openjdk-8-jdk
+openvpn
 parallel
 python-dev
 python3-dev
 python-gdal
+resolvconf
 tcpdump
 tmux
 unzip
 vim-gnome
-xchat
 xclip
 zip
 zsh
