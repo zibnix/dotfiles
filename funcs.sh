@@ -18,7 +18,7 @@ xfpst () {
 
 # a function for setting up Go, pass a git tagname to specify Go's version
 install_go() {
-    deftag='go1.7.3'
+    deftag='go1.9.2'
 
     gotag="$1"
     if [ -z "$gotag" ]; then
