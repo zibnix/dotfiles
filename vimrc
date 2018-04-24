@@ -1,11 +1,13 @@
 " Pathogen package manager
+filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 
-set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
+set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 set t_Co=256              " enable 256-color mode.
-syntax enable             " enable syntax highlighting (previously syntax on).
+syntax on                 " enable syntax highlighting (previously syntax on).
 set background=dark
 colorscheme dracula
 set number                " show line numbers
