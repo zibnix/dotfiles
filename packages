@@ -5,6 +5,7 @@ build-essential
 cmake
 curl
 dconf-tools
+dnsutils
 dselect
 gdebi
 gdal-bin
@@ -28,6 +29,7 @@ mcrypt
 members
 mercurial
 mtr
+net-tools
 nload
 nmap
 ntp
