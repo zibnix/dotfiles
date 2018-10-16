@@ -85,6 +85,7 @@ plugins=(git)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/sbin:/usr/sbin
+export PATH=$PATH:~/.local/bin:
 source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/funcs.sh
 
