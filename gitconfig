@@ -48,7 +48,5 @@
 	excludesfile = ~/.gitignore
 [url "git@github.com:"]
     insteadOf = https://github.com/
-[url "git@github.banksimple.com:"]
-    insteadof = https://github.banksimple.com/
 [pull]
 	ff = only

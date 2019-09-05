@@ -20,6 +20,8 @@ alias l="ls -ahl | sort -k 9"
 alias v=vim
 alias c=clear
 alias tm='TERM=screen-256color exec tmux'
+alias d=docker
+alias dc=docker-compose
 # alias kon='sudo su root -c "echo 1 >> /sys/class/leds/asus\:\:kbd_backlight/brightness"'
 # alias koff='sudo su root -c "echo 0 >> /sys/class/leds/asus\:\:kbd_backlight/brightness"'
 # alias bu="xbacklight +20"
@@ -27,8 +29,6 @@ alias tm='TERM=screen-256color exec tmux'
 # alias xclip="xclip -selection c"
 
 # go stuff
-export GOPATH=$HOME/gocode
-export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/go/bin
 
 # android
