@@ -30,6 +30,7 @@ alias dc=docker-compose
 
 # go stuff
 export PATH=$PATH:$HOME/go/bin
+export GOPATH=$HOME/gocode
 
 # android
 export PATH=$PATH:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools
