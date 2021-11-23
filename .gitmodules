@@ -1,27 +1,21 @@
 [submodule "vim/bundle/vim-pathogen"]
 	path = vim/bundle/vim-pathogen
-	url = git@github.com:courtf/vim-pathogen.git
+	url = git@github.com:zibnix/vim-pathogen.git
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
-	url = git@github.com:courtf/vim-go.git
+	url = git@github.com:zibnix/vim-go.git
 [submodule "vim/bundle/dracula-theme"]
 	path = vim/bundle/dracula-theme
-	url = git@github.com:courtf/dracula-theme.git
+	url = git@github.com:zibnix/dracula-theme.git
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
-	url = git@github.com:courtf/nerdtree.git
+	url = git@github.com:zibnix/nerdtree.git
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
-	url = git@github.com:courtf/YouCompleteMe.git
+	url = git@github.com:zibnix/YouCompleteMe.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = git@github.com:courtf/oh-my-zsh.git
-[submodule "vim/bundle/python-mode"]
-	path = vim/bundle/python-mode
-	url = git@github.com:courtf/python-mode.git
-[submodule "vim/bundle/salt-vim"]
-	path = vim/bundle/salt-vim
-	url = git@github.com:courtf/salt-vim.git
+	url = git@github.com:zibnix/oh-my-zsh.git
 [submodule "vim/bundle/Dockerfile.vim"]
 	path = vim/bundle/Dockerfile.vim
-	url = git@github.com:courtf/Dockerfile.vim.git
+	url = git@github.com:zibnix/Dockerfile.vim.git

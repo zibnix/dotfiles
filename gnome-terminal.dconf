@@ -3,7 +3,7 @@ list=['ff60bbbc-355c-4602-a2fe-38f4f786e1cc']
 
 [:ff60bbbc-355c-4602-a2fe-38f4f786e1cc]
 foreground-color='rgb(189,147,249)'
-visible-name='courtf'
+visible-name='zibnix'
 palette=['rgb(40,42,54)', 'rgb(191,64,64)', 'rgb(80,250,123)', 'rgb(255,184,108)', 'rgb(189,147,249)', 'rgb(255,121,198)', 'rgb(139,233,253)', 'rgb(248,248,242)', 'rgb(40,42,54)', 'rgb(255,85,85)', 'rgb(80,250,123)', 'rgb(241,250,140)', 'rgb(189,147,249)', 'rgb(255,121,198)', 'rgb(139,233,253)', 'rgb(248,248,242)']
 use-system-font=true
 use-theme-colors=false
