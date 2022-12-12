@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/dotfiles/oh-my-zsh
+export ZSH=$HOME/dotfiles/ohmyzsh
 DISABLE_AUTO_UPDATE=true
 
 # no autocorrect
