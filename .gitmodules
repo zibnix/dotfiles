@@ -16,3 +16,12 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = git@github.com:zibnix/ohmyzsh.git
+[submodule "vim/bundle/vim-hug-neovim-rpc"]
+	path = vim/bundle/vim-hug-neovim-rpc
+	url = git@github.com:zibnix/vim-hug-neovim-rpc.git
+[submodule "vim/bundle/nvim-yarp"]
+	path = vim/bundle/nvim-yarp
+	url = https://github.com/zibnix/nvim-yarp
+[submodule "vim/bundle/deoplete.nvim"]
+	path = vim/bundle/deoplete.nvim
+	url = git@github.com:zibnix/deoplete.nvim.git
