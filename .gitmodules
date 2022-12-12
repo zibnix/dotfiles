@@ -10,12 +10,18 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git@github.com:zibnix/nerdtree.git
-[submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
-	url = git@github.com:zibnix/YouCompleteMe.git
 [submodule "vim/bundle/Dockerfile.vim"]
 	path = vim/bundle/Dockerfile.vim
 	url = git@github.com:zibnix/Dockerfile.vim.git
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = git@github.com:zibnix/ohmyzsh.git
+[submodule "vim/bundle/deoplete.nvim"]
+	path = vim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule "vim/bundle/nvim-yarp"]
+	path = vim/bundle/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp.git
+[submodule "vim/bundle/vim-hug-neovim-rpc"]
+	path = vim/bundle/vim-hug-neovim-rpc
+	url = git@github.com:roxma/vim-hug-neovim-rpc.git
