@@ -46,7 +46,8 @@
     default = upstream
 [core]
 	excludesfile = ~/.gitignore
-[url "git@github.com:"]
+	autocrlf = false
+[url "ssh://git@github.com/"]
     insteadOf = https://github.com/
 [pull]
 	ff = only

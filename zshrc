@@ -31,10 +31,13 @@ alias dc=docker-compose
 # go stuff
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/gocode
+export GOROOT_BOOTSTRAP=$HOME/go1.20.6
+export GOPRIVATE=github.com/phylos/*
 
 # android
 export PATH=$PATH:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools
 alias astudio=~/android-studio/bin/studio.sh
+export PATH=$PATH:/opt/android-studio/jbr/bin
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
