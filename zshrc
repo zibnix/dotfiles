@@ -31,7 +31,7 @@ alias dc=docker-compose
 # go stuff
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/gocode
-export GOROOT_BOOTSTRAP=$HOME/go1.20.6
+export GOROOT_BOOTSTRAP=$HOME/go
 export GOPRIVATE=github.com/phylos/*
 
 # android
